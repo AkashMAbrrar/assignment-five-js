@@ -3,21 +3,13 @@ document.getElementById('btn-calculation').addEventListener('click', function ()
     const rentCost = parseFloat(document.getElementById('rent-input').value);
     const clothsCost = parseFloat(document.getElementById('cloths-input').value);
     const totalCost = foodCost + rentCost + clothsCost;
-    // 
+    //  total expense sum
     const totalExpense = document.getElementById('total-expese').innerText = totalCost;
     // 
-    const totalIncome = document.getElementById('income-input');
-    const incomeAmount = parseFloat(totalIncome.value);
+    const totalIncome = parseFloat(document.getElementById('income-input').value);
 
-    const incomeExpese = incomeAmount - totalExpense;
-
-
-
+    const incomeAmount = totalIncome - totalExpense;
     //
-
-
-
-    console.log(incomeExpese);
-
-    // console.log(foodInput);
-})
+    const totalBalance = document.getElementById('total-balance').innerText = incomeAmount;
+    // clear values
+});
