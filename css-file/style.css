@@ -1,16 +1,25 @@
+/* google font awsome */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 body{
     font-family: 'Ubuntu', sans-serif;
 }
+/* header section */
 .top-header{
     text-align: center;
     color: olivedrab;
-}
+} 
+/* form style */
 .form-header{
     text-align: center;
 }
+/* main contents for calculation */
 .content{
+    height: 50vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
     display: flex;
+    box-sizing: border-box;
     
 }
 .content img{
@@ -36,4 +45,11 @@ body{
     background-color: rgb(231, 92, 41);
     border-radius: 10px;
     color: white;
+}
+/* media queries */
+@media only screen and (max-width: 600px) {
+    .form-content {
+    background-color: lightblue;
+    display: block;
+  }
 }
